@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://studiokariery.github.io/Studio-Kariery-Pisanie-CV-i-Listow-Motywacyjnych/sitemap.xml

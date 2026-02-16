@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista potrzebnych informacji – Studio Kariery</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background: #f4f1eb;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .form-wrapper {
+            max-width: 900px;
+            margin: 60px auto;
+            background: #ffffff;
+            padding: 45px;
+            border-radius: 14px;
+            box-shadow: 0 4px 25px rgba(0,0,0,0.08);
+            line-height: 1.8;
+            letter-spacing: 0.01em;
+        }
+
+       .form-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.form-title::after {
+    content: "";
+    width: 120px;
+    height: 4px;
+    background: #d4af37;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    border-radius: 2px;
+}
+
+        .form-image {
+            display: block;
+            margin: 0 auto 35px auto;
+            max-width: 260px;
+            height: auto;
+        }
+.section-title {
+    color: #5a2a27;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    position: relative;
+    padding-bottom: 6px;
+}
+
+.section-title::after {
+    content: "";
+    width: 80px;
+    height: 3px;
+    background: #d4af37;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 2px;
+}
+
+.sub-title {
+    color: #5a2a27;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+ul {
+    margin-top: 5px;
+    margin-bottom: 18px;
+    padding-left: 22px;
+    line-height: 1.7;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+.skill-label {
+    color: #5a2a27;
+    font-weight: 600;
+}
+ .download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #d4af37;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 35px;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.03em;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+    transition: 0.3s;
+}
+
+.download-btn:hover {
+    background: #b8922b;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 16px rgba(0,0,0,0.18);
+}       
+.lang-switch {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.lang-switch span {
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid #008000;
+    transition: 0.2s;
+}
+
+.lang-switch span:hover {
+    background: #e6ffe6;
+}
+
+.active {
+    background: #008000;
+    color: white;
+}
+.home-switch {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.home-switch span {
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid #5a2a27;
+    transition: 0.2s;
+}
+
+.home-switch span:hover {
+    background: #f4e8d8;
+}        
+ </style>
+</head>
+
+<body>
+
+<div class="form-wrapper">
+
+    <div class="form-title">
+        Lista potrzebnych informacji w celu wypisania CV
+    </div>
+    <div style="text-align: center; margin: 20px 0;">
+    <img src="logo.png" alt="Logo" style="max-width: 300px; height: auto;">
+</div>
+    <div class="lang-switch">
+    <span class="active">PL</span>
+    <span onclick="location.href='form-en.html'">EN</span>
+</div>
+<div class="home-switch">
+    <span onclick="location.href='index.html'">Strona główna</span>
+</div>
+    <div class="section-title">1. Dane osobowe i kontaktowe</div>
+
+    <ul>
+        <li>Imię i nazwisko oraz aktualny tytuł zawodowy</li>
+        <li>Numer telefonu i adres e-mail</li>
+        <li>Lokalizacja – miasto wystarczy (np. Glen Parva)</li>
+        <li>Link do profilu na LinkedIn lub Indeed (jeśli posiadasz)</li>
+    </ul>
+
+    <div class="section-title">2. Doświadczenie zawodowe (od najnowszego)</div>
+
+    <ul>
+        <li>Pełna nazwa firmy oraz zajmowane stanowisko</li>
+        <li>Daty rozpoczęcia i zakończenia pracy (miesiąc i rok)</li>
+        <li>Kluczowe obowiązki</li>
+        <li>Osiągnięcia – liczby, procenty, konkretne projekty (np. „zwiększenie sprzedaży o 20%”). Jeżeli takich nie ma, to nie trzeba.</li>
+    </ul>
+
+    <div class="section-title">3. Wykształcenie, kursy i certyfikaty</div>
+
+    <ul>
+        <li>Szkoły/Uczelnie: nazwa placówki, kierunek, uzyskany tytuł i rok ukończenia</li>
+        <li>Kursy i szkolenia: pełna nazwa kursu, organizator i data uzyskania certyfikatu</li>
+        <li>Uprawnienia: np. prawo jazdy (kategorie), licencje zawodowe</li>
+    </ul>
+
+    <div class="section-title">4. Umiejętności (Twarde i Miękkie)</div>
+
+    <p>
+        <span class="skill-label">Twarde:</span>
+        znajomość programów (np. Excel, SAP, Python), obsługa maszyn, języki obce (z określeniem poziomu, np. B2).
+    </p>
+    <p>
+        <span class="skill-label">Miękkie:</span>
+        np. zarządzanie zespołem, negocjacje, odporność na stres (ważne zwłaszcza w obsłudze klienta).
+    </p>
+
+    <div class="section-title">5. Dodatkowe informacje</div>
+
+    <div class="sub-title">Podsumowanie zawodowe:</div>
+    <p>Opisz w 2–3 zdaniach, kim jesteś, co potrafisz i czego szukasz (tzw. „cel zawodowy”).</p>
+
+    <div class="sub-title">Zainteresowania:</div>
+    <p>2–3 hobby, które pokazują Ciebie jako ciekawą osobę (najlepiej unikać ogólników typu „kino, muzyka”).</p>
+
+    <div class="sub-title">Link do oferty pracy:</div>
+    <p>Jeśli CV ma być „szyte na miarę”, muszę widzieć ogłoszenie, na które chcesz aplikować.</p>
+
+    <a href="https://docs.google.com/document/d/1sNfQzQWBqumpuWyjWOJcuulR-3aM7WZjrhjVRRF3c0o/export?format=pdf"
+       class="download-btn" target="_blank">
+        📥 Pobierz dokument
+    </a>
+
+</div>
+
+</body>
+</html>

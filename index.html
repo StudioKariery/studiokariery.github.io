@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Studio Kariery – CV & Cover Letters</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #ffffff;
+            color: #222;
+        }
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    border-bottom: 2px solid #008000;
+    background: #ffffff;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-area img {
+    height: 70px;
+}
+
+.brand-name {
+    font-size: 22px;
+    font-weight: bold;
+    color: #008000;
+}
+
+.main-nav {
+    display: flex;
+    gap: 25px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.main-nav a:hover {
+    color: #008000;
+}
+
+.lang-switch {
+    display: flex;
+    gap: 10px;
+}
+        .lang-switch span {
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid #008000;
+    transition: 0.2s;
+}
+
+.lang-switch span:hover {
+    background: #e6ffe6;
+}
+
+.active {
+    background: #008000;
+    color: white;
+}
+
+/* RESPONSYWNOŚĆ */
+@media (max-width: 800px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .main-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+}
+        
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(135deg, #f5fff5, #e8fbe8);
+    border-bottom: 2px solid #008000;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #008000;
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    font-size: 22px;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #008000;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    background: #006600;
+}
+        
+
+        section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            color: #008000;
+            border-left: 5px solid #cc0000;
+            padding-left: 10px;
+        }
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.box {
+    background: linear-gradient(180deg, #faf7f2 0%, #ffffff 100%);
+    border-radius: 18px;
+    padding: 28px;
+    border: 1px solid #e6d8c8;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    text-align: center;
+    position: relative;
+}
+
+/* Złote kółko za ikoną (emoji) */
+.box h3 {
+    font-size: 20px;
+    color: #333;
+    font-weight: 600;
+    margin-top: 90px; /* więcej miejsca na ikonę */
+    position: relative;
+    min-height: 40px; /* zabezpieczenie przy dłuższych tytułach */
+}
+
+.box h3::before {
+    content: attr(data-icon);
+    position: absolute;
+    top: -80px; /* ikona wyżej, nie nachodzi */
+    left: 50%;
+    transform: translateX(-50%);
+    background: #c8a27e;
+    color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+.box p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Hover efekt premium */
+.box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.12);
+}
+       
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #008000;
+            color: white;
+            margin-top: 40px;
+        }
+
+        .hidden {
+            display: none;
+        }
+  .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.box {
+    flex: 1 1 260px;
+    max-width: 320px;
+    box-sizing: border-box;
+}
+#about h2,
+#about-en h2 {
+    position: relative;
+    padding-top: 20px;
+    font-weight: 700;
+}
+
+#about h2::before,
+#about-en h2::before {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: #d4af37;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 2px;
+}    
+#about,
+#about-en {
+    background: #fafafa;
+    padding: 60px 20px;
+    border-radius: 12px;
+}
+
+#about p,
+#about-en p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    font-weight: 500;
+    color: #333;
+}
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo-area">
+        <img src="logo.png" alt="Logo">
+        <span class="brand-name">Studio Kariery</span>
+    </div>
+
+   <nav class="main-nav">
+    <a id="nav-home">Strona główna</a>
+    <a id="nav-services">Usługi</a>
+    <a id="nav-contact">Kontakt</a>
+</nav>
+
+    <div class="lang-switch">
+        <span id="plBtn" class="active">PL</span>
+        <span id="enBtn">EN</span>
+    </div>
+</header>
+
+<!-- POLSKA WERSJA -->
+<div id="pl">
+
+       <div class="hero">
+        <h1>Profesjonalne CV i Listy Motywacyjne dla rynku UK</h1>
+        <p class="hero-subtitle">Tworzę dokumenty, które wyróżniają Cię wśród kandydatów</p>
+    </div>
+
+    <section id="about">
+    <h2>O mnie</h2>
+<p>
+Specjalizuję się w tworzeniu nowoczesnych, przejrzystych i skutecznych CV oraz listów motywacyjnych dla osób aplikujących na rynek pracy w Wielkiej Brytanii. Łączę znajomość brytyjskich standardów rekrutacyjnych z dbałością o estetykę i jasny przekaz.
+</p>
+<p>
+Pracuję zarówno z osobami rozpoczynającymi karierę, jak i z kandydatami na stanowiska specjalistyczne czy managerskie. Każdy dokument tworzę indywidualnie — tak, aby był spójny, dopracowany i gotowy do wysłania od razu po otrzymaniu.
+</p>
+<p>
+Większość projektów realizuję w ciągu 48–72 godzin, dzięki czemu szybko otrzymujesz gotowe, profesjonalne CV przygotowane zgodnie z wymaganiami rynku UK.
+</p>
+<p>
+Moim celem jest, aby Twoje CV nie tylko wyglądało profesjonalnie, ale przede wszystkim skutecznie otwierało drzwi do rozmów rekrutacyjnych.
+</p>   
+    </section>
+<section id="about-en" class="hidden">
+    <h2>About me</h2>
+    <p>
+        I specialise in creating modern, clear and effective CVs and cover letters for candidates applying to the UK job market. I combine an understanding of UK recruitment standards with a strong focus on clarity, structure and professional presentation.
+    </p>
+    <p>
+        I work with early‑career candidates as well as those applying for specialist and senior roles. Every document is created individually to ensure it is polished, consistent and ready to send the moment you receive it.
+    </p>
+    <p>
+        Most projects are completed within 48–72 hours, so you receive a professional, UK‑ready CV quickly and without unnecessary delays.
+    </p>
+    <p>
+        My goal is to make your CV not only look professional, but also increase your chances of being invited to interviews.
+    </p>
+</section>    
+
+    <section id="services">
+    <h2>Usługi</h2>
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3 data-icon="📄">Tworzenie / aktualizacja CV</h3>
+            <p>Profesjonalne CV w języku angielskim.</p>
+
+            <a href="formularz.html" class="hero-btn" style="margin-top:20px; display:inline-block;">
+                ➤ Informacje które potrzebuję od Ciebie
+            </a>
+        </div>
+
+        <div class="box">
+            <h3 data-icon="✉️">Pisanie listów motywacyjnych</h3>
+            <p>Indywidualnie dopasowany list motywacyjny.</p>
+        </div>
+
+        <div class="box">
+            <h3 data-icon="📁">Końcowy produkt w dwóch plikach</h3>
+            <p>Plik .docx do edycji oraz gotowy PDF do wysłania pracodawcy.</p>
+        </div>
+
+    </div>
+</section>
+
+ <section id="how-it-works">
+    <h2>Jak to działa?</h2>
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3 data-icon="📝">1. Wysyłasz mi informacje</h3>
+            <p>Klikasz w "Informacje które potrzebuję od Ciebie'' i wysyłasz dane potrzebne do stworzenia Twojego CV.</p>
+        </div>
+
+        <div class="box">
+            <h3 data-icon="🔍">2. Analizuję Twoje materiały</h3>
+            <p>Sprawdzam doświadczenie, umiejętności i dopasowuję układ do rynku pracy w UK.</p>
+        </div>
+
+        <div class="box">
+            <h3 data-icon="💼">3. Tworzę profesjonalne CV</h3>
+            <p>Przygotowuję nowoczesne, przejrzyste CV zgodne z brytyjskimi standardami rekrutacji.</p>
+        </div>
+
+        <div class="box">
+            <h3 data-icon="📁">4. Otrzymujesz gotowe pliki</h3>
+            <p>Dostajesz wersję PDF oraz edytowalny plik .docx — gotowe do wysłania pracodawcy.</p>
+        </div>
+
+    </div>
+</section>   
+
+ <section id="pricing">
+    <h2>Cennik</h2>
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3 data-icon="📄">CV</h3>
+            <p><strong>Do 3 lat doświadczenia:</strong> £50</p>
+            <p><strong>3–10 lat doświadczenia:</strong> £90</p>
+            <p><strong>Specjalista:</strong> £130</p>
+            <p><strong>Poziom managerski / senior:</strong> £160</p>
+        </div>
+
+        <div class="box">
+            <h3 data-icon="✉️">List motywacyjny</h3>
+            <p><strong>Każdy poziom doświadczenia:</strong> £30</p>
+        </div>
+
+        <div class="box">
+            <h3 data-icon="📁">Pakiet CV + List</h3>
+            <p><strong>Do 3 lat doświadczenia:</strong> £70</p>
+            <p><strong>3–10 lat doświadczenia:</strong> £110</p>
+            <p><strong>Specjalista:</strong> £150</p>
+            <p><strong>Poziom managerski / senior:</strong> £180</p>
+        </div>
+
+    </div>
+</section>   
+<section id="contact">
+    <h2>Kontakt</h2>
+    <p>📧 Email: <a href="mailto:studiokarierykontakt@gmail.com">studiokarierykontakt@gmail.com</a></p>
+    <p>
+        <a href="https://wa.me/447960039379" target="_blank" 
+           style="display:flex; align-items:center; gap:8px; text-decoration:none;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                 alt="WhatsApp" width="22" height="22">
+            WhatsApp
+        </a>
+    </p>
+    <p>💬 Masz pytanie lub chcesz zamówić usługę? Napisz lub zadzwoń — odpowiem najszybciej jak to możliwe.</p>
+    <a href="mailto:studiokarierykontakt@gmail.com" class="hero-btn">Napisz wiadomość</a>
+</section>
+   
+
+</div>
+
+<!-- ANGIELSKA WERSJA -->
+<div id="en" class="hidden">
+
+    <div class="hero">
+    <h1>Professional CV & Cover Letter Services for the UK Market</h1>
+    <p class="hero-subtitle">I create documents that help you stand out from other candidates</p>
+   
+</div>
+
+    <section id="services-en">
+    <h2>About me</h2>
+<p>
+I specialise in creating modern, clear and effective CVs and cover letters for candidates applying to the UK job market. I combine an understanding of UK recruitment standards with a strong focus on clarity, structure and professional presentation.
+</p>
+<p>
+I work with early‑career candidates as well as those applying for specialist and senior roles. Every document is created individually to ensure it is polished, consistent and ready to send the moment you receive it.
+</p>
+<p>
+Most projects are completed within 48–72 hours, so you receive a professional, UK‑ready CV quickly and without unnecessary delays.
+</p>
+<p>
+My goal is to make your CV not only look professional, but also increase your chances of being invited to interviews.
+</p>    
+
+<section id="services">
+    <h2>Services</h2>
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3 data-icon="📄">CV Creation / Rewrite</h3>
+            <p>Full professional CV written in English.</p>
+
+            <a href="form-en.html" class="hero-btn" style="margin-top:20px; display:inline-block;">
+                ➤ Info I need from you
+            </a>
+        </div>
+
+        <div class="box">
+            <h3 data-icon="✉️">Cover Letter Writing</h3>
+            <p>Tailored cover letter for your application.</p>
+        </div>
+
+        <div class="box">
+            <h3 data-icon="📁">Final product delivered in two files</h3>
+            <p>You receive an editable .docx file and a ready‑to‑send PDF for your application.</p>
+        </div>
+
+    </div>
+</section>
+<section id="how-it-works-en">
+    <h2>How it works</h2>
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3 data-icon="📝">1. You send me your information</h3>
+            <p>Click on "Info i need from you" and send the details I need to create your CV.</p>
+        </div>
+
+        <div class="box">
+            <h3 data-icon="🔍">2. I review your materials</h3>
+            <p>I analyse your experience and tailor the layout to UK recruitment standards.</p>
+        </div>
+
+        <div class="box">
+            <h3 data-icon="💼">3. I create your professional CV</h3>
+            <p>You receive a polished, modern CV written specifically for the UK market.</p>
+        </div>
+
+        <div class="box">
+            <h3 data-icon="📁">4. You get the final files</h3>
+            <p>I deliver a PDF and an editable .docx file ready to apply for jobs.</p>
+        </div>
+
+    </div>
+</section> 
+ <section id="pricing-en">
+    <h2>Pricing</h2>
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3 data-icon="📄">CV</h3>
+            <p><strong>Up to 3 years of experience:</strong> £50</p>
+            <p><strong>3–10 years of experience:</strong> £90</p>
+            <p><strong>Specialist level:</strong> £130</p>
+            <p><strong>Executive / Senior level:</strong> £160</p>
+        </div>
+
+        <div class="box">
+            <h3 data-icon="✉️">Cover Letter</h3>
+            <p><strong>All experience levels:</strong> £30</p>
+        </div>
+
+        <div class="box">
+            <h3 data-icon="📁">CV + Cover Letter Package</h3>
+            <p><strong>Up to 3 years:</strong> £70</p>
+            <p><strong>3–10 years:</strong> £110</p>
+            <p><strong>Specialist level:</strong> £150</p>
+            <p><strong>Executive / Senior level:</strong> £180</p>
+        </div>
+
+    </div>
+</section>  
+<section id="contact-en">
+    <h2>Contact</h2>
+    <p>📧 Email: <a href="mailto:studiokarierykontakt@gmail.com">studiokarierykontakt@gmail.com</a></p>
+     <p>
+        <a href="https://wa.me/447960039379" target="_blank"
+           style="display:flex; align-items:center; gap:8px; text-decoration:none;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                 alt="WhatsApp" width="22" height="22">
+            WhatsApp
+        </a>
+    </p>
+    <p>💬 Have a question or want to order a service? Send me a message or call me — I’ll get back to you as soon as possible.</p>
+    <a href="mailto:studiokarierykontakt@gmail.com" class="hero-btn">Send a message</a>
+</section>
+   
+</div>
+
+<footer>
+    © 2026 Studio Kariery – All rights reserved
+</footer>
+
+<script>
+    const plBtn = document.getElementById("plBtn");
+    const enBtn = document.getElementById("enBtn");
+
+    const pl = document.getElementById("pl");
+    const en = document.getElementById("en");
+
+    const navHome = document.getElementById("nav-home");
+    const navServices = document.getElementById("nav-services");
+    const navContact = document.getElementById("nav-contact");
+
+    function updateMenu(language) {
+        if (language === "PL") {
+            navHome.textContent = "Strona główna";
+            navServices.textContent = "Usługi";
+            navContact.textContent = "Kontakt";
+
+            navHome.onclick = () => pl.scrollIntoView();
+            navServices.onclick = () => document.getElementById("services").scrollIntoView();
+            navContact.onclick = () => document.getElementById("contact").scrollIntoView();
+        } else {
+            navHome.textContent = "Home";
+            navServices.textContent = "Services";
+            navContact.textContent = "Contact";
+
+            navHome.onclick = () => en.scrollIntoView();
+            navServices.onclick = () => document.getElementById("services-en").scrollIntoView();
+            navContact.onclick = () => document.getElementById("contact-en").scrollIntoView();
+        }
+    }
+
+    // Domyślnie PL
+    updateMenu("PL");
+
+    plBtn.onclick = () => {
+        pl.classList.remove("hidden");
+        en.classList.add("hidden");
+        plBtn.classList.add("active");
+        enBtn.classList.remove("active");
+        updateMenu("PL");
+    };
+
+    enBtn.onclick = () => {
+        en.classList.remove("hidden");
+        pl.classList.add("hidden");
+        enBtn.classList.add("active");
+        plBtn.classList.remove("active");
+        updateMenu("EN");
+    };
+</script>
+    
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
