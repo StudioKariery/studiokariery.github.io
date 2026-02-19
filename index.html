@@ -366,7 +366,21 @@ header {
 
 .main-nav a:hover::after {
     width: 100%;
-}        
+} 
+
+/* --- PREMIUM HOVER DLA BOXÓW --- */
+.box:hover {
+    border-color: #d4af37;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+.box h3::before {
+    transition: transform 0.3s ease;
+}
+
+.box:hover h3::before {
+    transform: translateX(-50%) scale(1.08);
+}
     </style>
 </head>
 
@@ -763,6 +777,7 @@ My goal is to make your CV not only look professional, but also increase your ch
 </body>
 
 </html>
+
 
 
 
