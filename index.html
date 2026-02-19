@@ -250,6 +250,68 @@ header {
     font-weight: 500;
     color: #333;
 }
+        /* --- OPINIE GOOGLE --- */
+
+.google-review {
+    margin-top: 60px;
+    padding: 40px 20px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.08);
+    animation: fadeIn 1.2s ease;
+}
+
+.google-review h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.review-card {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 25px;
+    background: #fafafa;
+    border-radius: 14px;
+    border: 1px solid #e6e6e6;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.avatar {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+.stars {
+    color: #fbbc04;
+    font-size: 20px;
+    margin-top: 3px;
+}
+
+.source {
+    font-size: 14px;
+    color: #777;
+}
+
+.review-text {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Animacja */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
     </style>
 </head>
 
@@ -408,6 +470,30 @@ Moim celem jest, aby Twoje CV nie tylko wyglądało profesjonalnie, ale przede w
     </p>
     <p>💬 Masz pytanie lub chcesz zamówić usługę? Napisz lub zadzwoń — odpowiem najszybciej jak to możliwe.</p>
     <a href="mailto:studiokarierykontakt@gmail.com" class="hero-btn">Napisz wiadomość</a>
+</section>
+    <section id="opinie" class="google-review">
+    <h2>Opinie klientów</h2>
+
+    <div class="review-card">
+        <div class="review-header">
+            <img src="https://www.gstatic.com/images/branding/product/1x/avatar_circle_blue_512dp.png" 
+                 alt="Avatar" class="avatar">
+            <div>
+                <h3>Paweł Pyrkowski</h3>
+                <div class="stars">★★★★★</div>
+                <span class="source">Opinia z Google</span>
+            </div>
+        </div>
+
+        <p class="review-text">
+            Sam nie potrafię dobrze napisać CV, nie mówiąc o listach motywacyjnych. 
+            Miałem jakieś tam CV z moim życiorysem, ale skontaktowałem się z tą firmą — 
+            pokazali mi przykład swoich poprzednich klientów przed i po. 
+            Zdecydowałem się, aby napisali mi CV. Nawet nie szukam pracy, ale dobrze mieć na zapas. 
+            Studio Kariery napisało mi świetne CV w dobrej cenie, a najlepsze jest to, że wysyłają plik 
+            dokumentowy, co sprawia, że można sobie coś dopisać. Polecam w 100%!
+        </p>
+    </div>
 </section>
    
 
@@ -593,6 +679,7 @@ My goal is to make your CV not only look professional, but also increase your ch
 </body>
 
 </html>
+
 
 
 
